@@ -1,0 +1,4 @@
+## 2026-05-25, Mobile repo source of truth and wrapper approach
+**What was decided:** Mobile-BlueLineOps is now connected through GitHub on `main`, cloned locally at `F:\alex-sysdev-dev\Mobile-BlueLineOps`, and treated as a Capacitor Android wrapper around the deployed BlueLineOps website.
+**Why:** The full project was first built in Google Cloud, then pushed successfully to GitHub from Cloud Shell. The local repo now tracks `origin/main`, and `capacitor.config.json` points the mobile shell to `https://bluelineopsok.vercel.app/`.
+**What was rejected:** Starting over in VS Code was rejected because the real project already existed in Google Cloud. Pushing the Cloud Shell home directory was rejected because it included `.bash_history`, `.codeoss`, `.gemini`, and other non-project files. Using Git LFS for `node_modules` was rejected because dependencies should be ignored and restored with `npm install`.
