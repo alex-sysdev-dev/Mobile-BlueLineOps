@@ -1,0 +1,9 @@
+{
+  "appId": "com.bluelineops.app",
+  "appName": "BlueLineOps",
+  "webDir": "www",
+  "server": {
+    "url": "https://bluelineopsok.vercel.app/",
+    "cleartext": true
+  }
+}
